@@ -1,0 +1,1 @@
+<x-message-frame :team="$team" />

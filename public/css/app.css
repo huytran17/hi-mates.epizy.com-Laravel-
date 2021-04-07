@@ -1,0 +1,909 @@
+::-webkit-scrollbar {
+  width: 0; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+  html body {
+    height: 100%; }
+    html body #app {
+      height: 100%; }
+      html body #app #MainPanel {
+        height: 100%; }
+        html body #app #MainPanel #HomeLayout {
+          height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s;
+  transition: background-color 5000s; }
+
+h4 {
+  margin: 0 !important; }
+
+.fz-xs {
+  font-size: 0.8rem; }
+
+.fz-sm {
+  font-size: 1.2rem; }
+
+.fz-md {
+  font-size: 1.6rem; }
+
+.fz-lg {
+  font-size: 1.8rem; }
+
+.fz-xl {
+  font-size: 2.2rem; }
+
+.btn:active:focus:not(:disabled):not(.disabled),
+.btn:focus,
+.btn:active,
+audio,
+textarea,
+input {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 0; }
+
+ul {
+  list-style-type: none; }
+
+.modal * {
+  font-size: 1.6rem !important; }
+.modal .modal-footer button {
+  background-color: #17A2B8;
+  padding: .3rem .4rem;
+  color: white;
+  border: none;
+  outline: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.m-dr {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .m-dr .sender {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .m-dr .msg-content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .m-dr .func-item {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+
+.item-active, .team-item-active::before, .mem-item-active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.team-item-active {
+  background-color: #F3ECEC; }
+  .team-item-active::before {
+    border-left: 4px solid #51B0FF; }
+
+.mem-item-active {
+  background-color: #F3ECEC; }
+  .mem-item-active::before {
+    border-left: 4px solid #51B0FF; }
+
+.btn-submit, #MainPanel ._c-mail-reset-pwd ._w-mail-reset-pwd ._mail-reset-pwd .card .card-body form .form-group ._form-row button[type=submit], #MainPanel ._c-reset-pwd ._w-reset-pwd ._reset-pwd .card .card-body form .form-group button[type=submit], #AppendPosition .modal .modal-dialog .modal-content .modal-footer button[type=button] {
+  font-size: 14px !important;
+  background-color: white;
+  color: black;
+  border: 1px solid black; }
+
+._card-header, #MainPanel ._c-mail-reset-pwd ._w-mail-reset-pwd ._mail-reset-pwd .card .card-header, #MainPanel ._c-verify-reset-pwd ._w-verify-reset-pwd ._verify-reset-pwd .card .card-header, #MainPanel ._c-reset-pwd ._w-reset-pwd ._reset-pwd .card .card-header {
+  background-color: #F9F9F9;
+  font-size: 16px; }
+
+.invalid-feedback {
+  font-size: 9px !important; }
+
+.navbar .container-fluid .navbar-brand {
+  font-size: 1.6rem; }
+.navbar .container-fluid .navbar-toggler {
+  border: none; }
+  .navbar .container-fluid .navbar-toggler:focus {
+    outline: none; }
+.navbar .container-fluid #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+  font-size: 15px; }
+.navbar .container-fluid #navbarSupportedContent .navbar-nav .dropdown .dropdown-menu {
+  border: none; }
+  .navbar .container-fluid #navbarSupportedContent .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+    font-size: 1.6rem;
+    cursor: pointer; }
+    .navbar .container-fluid #navbarSupportedContent .navbar-nav .dropdown .dropdown-menu .dropdown-item:active {
+      background-color: transparent;
+      color: black; }
+
+#MainPanel {
+  position: relative;
+  padding: 0; }
+  #MainPanel #SignIn, #MainPanel #SignUp {
+    margin-top: 3rem; }
+    #MainPanel #SignIn .container, #MainPanel #SignUp .container {
+      box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+      -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+      -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -o-border-radius: 20px;
+      -ms-border-radius: 20px;
+      width: 56%; }
+      #MainPanel #SignIn .container .signin-content, #MainPanel #SignIn .container .signup-content, #MainPanel #SignUp .container .signin-content, #MainPanel #SignUp .container .signup-content {
+        padding-top: 67px;
+        padding-bottom: 87px; }
+        #MainPanel #SignIn .container .signin-content .signin-image, #MainPanel #SignIn .container .signin-content .signup-image, #MainPanel #SignIn .container .signup-content .signin-image, #MainPanel #SignIn .container .signup-content .signup-image, #MainPanel #SignUp .container .signin-content .signin-image, #MainPanel #SignUp .container .signin-content .signup-image, #MainPanel #SignUp .container .signup-content .signin-image, #MainPanel #SignUp .container .signup-content .signup-image {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center; }
+        #MainPanel #SignIn .container .signin-content .signin-form, #MainPanel #SignIn .container .signin-content .signup-form, #MainPanel #SignIn .container .signup-content .signin-form, #MainPanel #SignIn .container .signup-content .signup-form, #MainPanel #SignUp .container .signin-content .signin-form, #MainPanel #SignUp .container .signin-content .signup-form, #MainPanel #SignUp .container .signup-content .signin-form, #MainPanel #SignUp .container .signup-content .signup-form {
+          padding: 0 4rem; }
+          #MainPanel #SignIn .container .signin-content .signin-form .form-title, #MainPanel #SignIn .container .signin-content .signup-form .form-title, #MainPanel #SignIn .container .signup-content .signin-form .form-title, #MainPanel #SignIn .container .signup-content .signup-form .form-title, #MainPanel #SignUp .container .signin-content .signin-form .form-title, #MainPanel #SignUp .container .signin-content .signup-form .form-title, #MainPanel #SignUp .container .signup-content .signin-form .form-title, #MainPanel #SignUp .container .signup-content .signup-form .form-title {
+            margin: 0 0 33px 2rem;
+            font-weight: bold;
+            font-size: 36px; }
+          #MainPanel #SignIn .container .signin-content .signin-form form, #MainPanel #SignIn .container .signin-content .signup-form form, #MainPanel #SignIn .container .signup-content .signin-form form, #MainPanel #SignIn .container .signup-content .signup-form form, #MainPanel #SignUp .container .signin-content .signin-form form, #MainPanel #SignUp .container .signin-content .signup-form form, #MainPanel #SignUp .container .signup-content .signin-form form, #MainPanel #SignUp .container .signup-content .signup-form form {
+            margin-left: 2rem; }
+            #MainPanel #SignIn .container .signin-content .signin-form form .form-group, #MainPanel #SignIn .container .signin-content .signup-form form .form-group, #MainPanel #SignIn .container .signup-content .signin-form form .form-group, #MainPanel #SignIn .container .signup-content .signup-form form .form-group, #MainPanel #SignUp .container .signin-content .signin-form form .form-group, #MainPanel #SignUp .container .signin-content .signup-form form .form-group, #MainPanel #SignUp .container .signup-content .signin-form form .form-group, #MainPanel #SignUp .container .signup-content .signup-form form .form-group {
+              width: 100%;
+              margin: 0;
+              margin-bottom: 2.5rem; }
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-group .input-group, #MainPanel #SignIn .container .signin-content .signup-form form .form-group .input-group, #MainPanel #SignIn .container .signup-content .signin-form form .form-group .input-group, #MainPanel #SignIn .container .signup-content .signup-form form .form-group .input-group, #MainPanel #SignUp .container .signin-content .signin-form form .form-group .input-group, #MainPanel #SignUp .container .signin-content .signup-form form .form-group .input-group, #MainPanel #SignUp .container .signup-content .signin-form form .form-group .input-group, #MainPanel #SignUp .container .signup-content .signup-form form .form-group .input-group {
+                position: relative; }
+                #MainPanel #SignIn .container .signin-content .signin-form form .form-group .input-group .input-group-prepend, #MainPanel #SignIn .container .signin-content .signup-form form .form-group .input-group .input-group-prepend, #MainPanel #SignIn .container .signup-content .signin-form form .form-group .input-group .input-group-prepend, #MainPanel #SignIn .container .signup-content .signup-form form .form-group .input-group .input-group-prepend, #MainPanel #SignUp .container .signin-content .signin-form form .form-group .input-group .input-group-prepend, #MainPanel #SignUp .container .signin-content .signup-form form .form-group .input-group .input-group-prepend, #MainPanel #SignUp .container .signup-content .signin-form form .form-group .input-group .input-group-prepend, #MainPanel #SignUp .container .signup-content .signup-form form .form-group .input-group .input-group-prepend {
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  -webkit-transform: translateY(-50%);
+                      -ms-transform: translateY(-50%);
+                          transform: translateY(-50%);
+                  z-index: 999; }
+                  #MainPanel #SignIn .container .signin-content .signin-form form .form-group .input-group .input-group-prepend .input-group-text, #MainPanel #SignIn .container .signin-content .signup-form form .form-group .input-group .input-group-prepend .input-group-text, #MainPanel #SignIn .container .signup-content .signin-form form .form-group .input-group .input-group-prepend .input-group-text, #MainPanel #SignIn .container .signup-content .signup-form form .form-group .input-group .input-group-prepend .input-group-text, #MainPanel #SignUp .container .signin-content .signin-form form .form-group .input-group .input-group-prepend .input-group-text, #MainPanel #SignUp .container .signin-content .signup-form form .form-group .input-group .input-group-prepend .input-group-text, #MainPanel #SignUp .container .signup-content .signin-form form .form-group .input-group .input-group-prepend .input-group-text, #MainPanel #SignUp .container .signup-content .signup-form form .form-group .input-group .input-group-prepend .input-group-text {
+                    border: none;
+                    background-color: transparent; }
+                #MainPanel #SignIn .container .signin-content .signin-form form .form-group .input-group input, #MainPanel #SignIn .container .signin-content .signup-form form .form-group .input-group input, #MainPanel #SignIn .container .signup-content .signin-form form .form-group .input-group input, #MainPanel #SignIn .container .signup-content .signup-form form .form-group .input-group input, #MainPanel #SignUp .container .signin-content .signin-form form .form-group .input-group input, #MainPanel #SignUp .container .signin-content .signup-form form .form-group .input-group input, #MainPanel #SignUp .container .signup-content .signin-form form .form-group .input-group input, #MainPanel #SignUp .container .signup-content .signup-form form .form-group .input-group input {
+                  border: none;
+                  border-bottom: 1px solid #999;
+                  padding: 6px 30px;
+                  font-size: 1.6rem; }
+                  #MainPanel #SignIn .container .signin-content .signin-form form .form-group .input-group input:focus, #MainPanel #SignIn .container .signin-content .signup-form form .form-group .input-group input:focus, #MainPanel #SignIn .container .signup-content .signin-form form .form-group .input-group input:focus, #MainPanel #SignIn .container .signup-content .signup-form form .form-group .input-group input:focus, #MainPanel #SignUp .container .signin-content .signin-form form .form-group .input-group input:focus, #MainPanel #SignUp .container .signin-content .signup-form form .form-group .input-group input:focus, #MainPanel #SignUp .container .signup-content .signin-form form .form-group .input-group input:focus, #MainPanel #SignUp .container .signup-content .signup-form form .form-group .input-group input:focus {
+                    border-bottom: 1px solid black; }
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-group button[type=submit], #MainPanel #SignIn .container .signin-content .signup-form form .form-group button[type=submit], #MainPanel #SignIn .container .signup-content .signin-form form .form-group button[type=submit], #MainPanel #SignIn .container .signup-content .signup-form form .form-group button[type=submit], #MainPanel #SignUp .container .signin-content .signin-form form .form-group button[type=submit], #MainPanel #SignUp .container .signin-content .signup-form form .form-group button[type=submit], #MainPanel #SignUp .container .signup-content .signin-form form .form-group button[type=submit], #MainPanel #SignUp .container .signup-content .signup-form form .form-group button[type=submit] {
+                background-color: white;
+                color: black;
+                font-size: 1.6rem;
+                padding: .5rem .6rem;
+                border: 1px solid black; }
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-group .signup-link,
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-group .signin-link, #MainPanel #SignIn .container .signin-content .signup-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignIn .container .signin-content .signup-form form .form-group .signup-link,
+              #MainPanel #SignIn .container .signin-content .signup-form form .form-group .signin-link, #MainPanel #SignIn .container .signup-content .signin-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignIn .container .signup-content .signin-form form .form-group .signup-link,
+              #MainPanel #SignIn .container .signup-content .signin-form form .form-group .signin-link, #MainPanel #SignIn .container .signup-content .signup-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignIn .container .signup-content .signup-form form .form-group .signup-link,
+              #MainPanel #SignIn .container .signup-content .signup-form form .form-group .signin-link, #MainPanel #SignUp .container .signin-content .signin-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignUp .container .signin-content .signin-form form .form-group .signup-link,
+              #MainPanel #SignUp .container .signin-content .signin-form form .form-group .signin-link, #MainPanel #SignUp .container .signin-content .signup-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignUp .container .signin-content .signup-form form .form-group .signup-link,
+              #MainPanel #SignUp .container .signin-content .signup-form form .form-group .signin-link, #MainPanel #SignUp .container .signup-content .signin-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignUp .container .signup-content .signin-form form .form-group .signup-link,
+              #MainPanel #SignUp .container .signup-content .signin-form form .form-group .signin-link, #MainPanel #SignUp .container .signup-content .signup-form form .form-group .forgot-pwd-link,
+              #MainPanel #SignUp .container .signup-content .signup-form form .form-group .signup-link,
+              #MainPanel #SignUp .container .signup-content .signup-form form .form-group .signin-link {
+                font-size: 1.2rem;
+                margin-top: 1rem;
+                text-decoration: none;
+                display: block; }
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-group .signup-link, #MainPanel #SignIn .container .signin-content .signup-form form .form-group .signup-link, #MainPanel #SignIn .container .signup-content .signin-form form .form-group .signup-link, #MainPanel #SignIn .container .signup-content .signup-form form .form-group .signup-link, #MainPanel #SignUp .container .signin-content .signin-form form .form-group .signup-link, #MainPanel #SignUp .container .signin-content .signup-form form .form-group .signup-link, #MainPanel #SignUp .container .signup-content .signin-form form .form-group .signup-link, #MainPanel #SignUp .container .signup-content .signup-form form .form-group .signup-link {
+                margin-top: -10px; }
+            #MainPanel #SignIn .container .signin-content .signin-form form .form-checkbox, #MainPanel #SignIn .container .signin-content .signup-form form .form-checkbox, #MainPanel #SignIn .container .signup-content .signin-form form .form-checkbox, #MainPanel #SignIn .container .signup-content .signup-form form .form-checkbox, #MainPanel #SignUp .container .signin-content .signin-form form .form-checkbox, #MainPanel #SignUp .container .signin-content .signup-form form .form-checkbox, #MainPanel #SignUp .container .signup-content .signin-form form .form-checkbox, #MainPanel #SignUp .container .signup-content .signup-form form .form-checkbox {
+              margin-bottom: 1.5rem; }
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-checkbox input[type=checkbox], #MainPanel #SignIn .container .signin-content .signup-form form .form-checkbox input[type=checkbox], #MainPanel #SignIn .container .signup-content .signin-form form .form-checkbox input[type=checkbox], #MainPanel #SignIn .container .signup-content .signup-form form .form-checkbox input[type=checkbox], #MainPanel #SignUp .container .signin-content .signin-form form .form-checkbox input[type=checkbox], #MainPanel #SignUp .container .signin-content .signup-form form .form-checkbox input[type=checkbox], #MainPanel #SignUp .container .signup-content .signin-form form .form-checkbox input[type=checkbox], #MainPanel #SignUp .container .signup-content .signup-form form .form-checkbox input[type=checkbox] {
+                margin: 0 1rem 0 5.5px; }
+              #MainPanel #SignIn .container .signin-content .signin-form form .form-checkbox label, #MainPanel #SignIn .container .signin-content .signup-form form .form-checkbox label, #MainPanel #SignIn .container .signup-content .signin-form form .form-checkbox label, #MainPanel #SignIn .container .signup-content .signup-form form .form-checkbox label, #MainPanel #SignUp .container .signin-content .signin-form form .form-checkbox label, #MainPanel #SignUp .container .signin-content .signup-form form .form-checkbox label, #MainPanel #SignUp .container .signup-content .signin-form form .form-checkbox label, #MainPanel #SignUp .container .signup-content .signup-form form .form-checkbox label {
+                font-size: 15px; }
+  #MainPanel #HomeLayout {
+    position: relative;
+    margin: 0 auto;
+    overflow-x: hidden; }
+    #MainPanel #HomeLayout #NavLeft {
+      width: 30%;
+      height: 100%;
+      position: relative;
+      padding: 0 1rem;
+      z-index: 999;
+      background-color: #FFFFFF; }
+      #MainPanel #HomeLayout #NavLeft #SlideLeft {
+        position: absolute;
+        top: 42%;
+        right: -42px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 999px;
+        background-color: #b3edf0;
+        z-index: 999;
+        display: none; }
+        #MainPanel #HomeLayout #NavLeft #SlideLeft:hover {
+          background-color: #abe6e8; }
+        #MainPanel #HomeLayout #NavLeft #SlideLeft i {
+          font-size: 2.2rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+      #MainPanel #HomeLayout #NavLeft .accordion {
+        width: 100%;
+        max-height: 50%;
+        position: relative;
+        overflow-y: scroll;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        #MainPanel #HomeLayout #NavLeft .accordion .card {
+          border: none; }
+          #MainPanel #HomeLayout #NavLeft .accordion .card .card-header {
+            padding: 0; }
+            #MainPanel #HomeLayout #NavLeft .accordion .card .card-header div[data-toggle="collapse"] {
+              width: 100%;
+              height: 100%;
+              padding: 1rem;
+              cursor: pointer;
+              font-size: 1.6rem;
+              position: relative; }
+              #MainPanel #HomeLayout #NavLeft .accordion .card .card-header div[data-toggle="collapse"] span {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                        transform: translateY(-50%); }
+          #MainPanel #HomeLayout #NavLeft .accordion .card .collapse {
+            overflow-y: scroll;
+            position: relative; }
+            #MainPanel #HomeLayout #NavLeft .accordion .card .collapse .card-body .list {
+              position: relative;
+              width: 100%;
+              height: auto; }
+      #MainPanel #HomeLayout #NavLeft #accordionTeam .card #collapseTeam .card-body .list-teams .team-tag {
+        padding: 1.3rem .2rem 1.3rem 1rem;
+        cursor: pointer;
+        position: relative; }
+        #MainPanel #HomeLayout #NavLeft #accordionTeam .card #collapseTeam .card-body .list-teams .team-tag .tag-container .tag .tag-item {
+          font-size: 1.6rem;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+             text-overflow: ellipsis;
+          max-height: 40px;
+          line-height: 20px;
+          -webkit-line-clamp: 2;
+          display: -webkit-box;
+          -webkit-box-orient: vertical; }
+      #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item {
+        padding: .5rem .2rem .5rem 1rem;
+        cursor: pointer;
+        position: relative; }
+        #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item:hover #MemDesModal i {
+          display: block !important; }
+        #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item .mem {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item .mem img {
+            width: 35px;
+            height: 35px;
+            border-radius: 999px;
+            border: 1px solid #d1ffe3; }
+          #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item .mem #MemName {
+            margin: 0 1rem;
+            font-size: 1.6rem;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+               text-overflow: ellipsis;
+            max-height: 35px;
+            line-height: 35px;
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            -webkit-box-orient: vertical; }
+          #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item .mem #MemDesModal {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-preferred-size: 0 0 100%;
+                flex-basis: 0 0 100%; }
+            #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item .mem #MemDesModal i {
+              margin-top: .2rem;
+              display: none;
+              font-size: 1.2rem; }
+          #MainPanel #HomeLayout #NavLeft #accordionMember .card #collapseMem .card-body .list-members .mem-item .mem .owner i {
+            line-height: 38px;
+            color: #60c2ff; }
+    #MainPanel #HomeLayout #MsgFrame {
+      width: 60%;
+      height: 100%;
+      padding: 0;
+      position: relative;
+      margin: 0 auto 0 0; }
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header {
+        padding-bottom: 1rem; }
+        #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title {
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          width: 100%;
+          height: auto; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title h4 {
+            vertical-align: text-top;
+            width: 75%;
+            height: auto;
+            font-size: 1.8rem;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+               text-overflow: ellipsis;
+            max-height: 40px;
+            line-height: 20px;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs {
+            margin-left: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            width: 20%;
+            height: auto; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs .btn-add-mem #AddMemModal {
+              font-size: 1.8rem;
+              cursor: pointer; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #video #OpenCallWindow {
+              font-size: 1.8rem;
+              cursor: pointer; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #TeamFuncs .dropdown .dropdown-menu {
+              border: none; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #TeamFuncs .dropdown .dropdown-menu .dropdown-item {
+                cursor: pointer; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #TeamFuncs .dropdown .dropdown-menu .dropdown-item:active:active {
+                  background-color: transparent;
+                  color: black; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #TeamFuncs .dropdown .fa-cog {
+              font-size: 1.8rem;
+              cursor: pointer; }
+        #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .count-members {
+          text-decoration: underline; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .count-members span {
+            font-size: 1.2rem; }
+        #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .join-code span {
+          font-size: 1.2rem;
+          text-decoration: underline;
+          margin-right: .6rem; }
+        #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .join-code i {
+          font-size: 1.2rem;
+          cursor: pointer; }
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        height: 500px;
+        max-height: 500px; }
+        #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages {
+          position: relative;
+          margin: 0;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          padding-bottom: 1rem;
+          height: 100%; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages #NoMoreMsg p {
+            text-align: center; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages #NoMoreMsg p span {
+              font-size: 1.2rem; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item {
+            opacity: 0.98;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: .5rem; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item:hover .func-item .item-container .items {
+              display: block; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .sender {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .sender span {
+                display: none; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .sender p {
+                margin-bottom: 0;
+                margin-top: auto; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .sender p img {
+                  margin: 0 .3rem 0 .4rem;
+                  border-radius: 9999px;
+                  width: 3rem;
+                  height: 3rem; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .msg-content {
+              padding: 6px 8px;
+              border-radius: 5px 5px 5px 5px;
+              max-width: 65%;
+              word-wrap: break-word;
+              word-break: break-all; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .msg-content .reply {
+                margin: 0; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .msg-content .reply .msg-rep * {
+                  font-size: 1.2rem; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .msg-content .reply .text-content {
+                  font-size: 1.2rem;
+                  overflow: hidden;
+                  -o-text-overflow: ellipsis;
+                     text-overflow: ellipsis;
+                  max-height: 14px;
+                  line-height: 14px;
+                  -webkit-line-clamp: 1;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .msg-content .main-msg {
+                font-size: 1.6rem;
+                margin: 0; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .msg-content .main-msg .content img {
+                  width: 10rem;
+                  height: 10rem; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .func-item .item-container {
+              height: 100%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .func-item .item-container .items {
+                display: none;
+                margin: auto 1rem;
+                cursor: pointer; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-body #messages .msg-item .func-item .item-container .items i {
+                  font-size: 1.2rem; }
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer {
+        height: 10rem; }
+        #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input {
+          position: relative; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewReply {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            -webkit-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                    transform: translateY(-100%);
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            background-color: #E0FCFF;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            padding: .6rem .3rem; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewReply #ReplyTag {
+              margin: 0; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewReply #ReplyTag * {
+                font-size: 1.2rem; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewReply #ReplyTag img {
+                width: 80px;
+                height: 80px;
+                margin-left: 1rem; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewReply #ReplyTag .text-content {
+                font-size: 1.2rem;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                   text-overflow: ellipsis;
+                max-height: 30px;
+                line-height: 15px;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transform: translateY(-101%);
+                -ms-transform: translateY(-101%);
+                    transform: translateY(-101%); }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewImg {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              margin-right: 1rem; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewImg div:first-child {
+                width: 8rem;
+                height: 8rem;
+                border: 1px solid black;
+                background-color: white; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewImg div:first-child img {
+                  width: 100%;
+                  height: 100%;
+                  border: 1px solid black;
+                  width: 8rem;
+                  height: 8rem; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewImg div:last-child {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewImg div:last-child span {
+                  margin-left: .4rem;
+                  cursor: pointer; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewFile {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewFile div:first-child {
+                width: 8rem;
+                height: 8rem;
+                border: 1px solid black;
+                background-color: white; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewFile div:first-child p {
+                  margin: 0;
+                  font-size: 1.6rem;
+                  overflow: hidden;
+                  -o-text-overflow: ellipsis;
+                     text-overflow: ellipsis;
+                  max-height: 100%;
+                  line-height: 20px;
+                  -webkit-line-clamp: 4;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewFile div:last-child {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #PreviewAttachment #PreviewFile div:last-child span {
+                  margin-left: .4rem;
+                  cursor: pointer; }
+          #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg {
+            width: 100%;
+            position: relative;
+            padding-top: 1rem; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment {
+              width: 18rem;
+              height: 100%; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment .options {
+                background-color: transparent;
+                border-top-left-radius: 2px;
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+                border-bottom-left-radius: 2px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment .options .expand #BtnExpAtt {
+                  font-size: 1.6rem;
+                  cursor: pointer; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment .options .option-items {
+                  display: none;
+                  width: auto;
+                  overflow: hidden; }
+                  #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment .options .option-items input {
+                    display: none; }
+                  #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment .options .option-items label {
+                    margin: 0 1rem;
+                    cursor: pointer; }
+                    #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment .options .option-items label i {
+                      font-size: 1.6rem; }
+                  #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .attachment .options .option-items #voice #PreviewRecord audio {
+                    background-color: transparent;
+                    height: 3rem; }
+            #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .type-area {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              position: relative;
+              top: 0;
+              left: 0;
+              width: 100%; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .type-area textarea {
+                resize: none;
+                padding: 1rem .6rem 0 .6rem;
+                border: none;
+                border-bottom: 1px solid black;
+                background-color: transparent;
+                font-size: 1.6rem;
+                width: 95%;
+                height: 5rem; }
+              #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .type-area .btn-send-msg {
+                width: 5%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: end;
+                    -ms-flex-pack: end;
+                        justify-content: flex-end;
+                cursor: pointer; }
+                #MainPanel #HomeLayout #MsgFrame .message-frame .frame-footer .msg-input #FormSendMsg .type-area .btn-send-msg div {
+                  text-align: center; }
+  #MainPanel .user-profile {
+    padding-bottom: 1rem; }
+    #MainPanel .user-profile label,
+    #MainPanel .user-profile input,
+    #MainPanel .user-profile h5,
+    #MainPanel .user-profile button,
+    #MainPanel .user-profile .title p,
+    #MainPanel .user-profile .created_at p,
+    #MainPanel .user-profile .des-avt a {
+      font-size: 1.6rem; }
+    #MainPanel .user-profile .body .card {
+      border: none;
+      margin-top: 1rem; }
+      #MainPanel .user-profile .body .card .card-header {
+        border: none;
+        background-color: #F9F9F9; }
+      #MainPanel .user-profile .body .card:not(#MainPanel .user-profile .body .card:last-child) {
+        border-bottom: 1px solid #F2F2F2; }
+      #MainPanel .user-profile .body .card .card-body button[type="submit"] {
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        color: #000000; }
+  #MainPanel ._c-mail-reset-pwd ._w-mail-reset-pwd ._mail-reset-pwd .card {
+    border: none; }
+    #MainPanel ._c-mail-reset-pwd ._w-mail-reset-pwd ._mail-reset-pwd .card .card-body form .form-group label[for=email] {
+      font-size: 14px; }
+    #MainPanel ._c-mail-reset-pwd ._w-mail-reset-pwd ._mail-reset-pwd .card .card-body form .form-group ._form-row input {
+      font-size: 14px; }
+  #MainPanel ._c-verify-reset-pwd ._w-verify-reset-pwd ._verify-reset-pwd .card {
+    border: none; }
+    #MainPanel ._c-verify-reset-pwd ._w-verify-reset-pwd ._verify-reset-pwd .card .card-body {
+      font-size: 14px; }
+      #MainPanel ._c-verify-reset-pwd ._w-verify-reset-pwd ._verify-reset-pwd .card .card-body form button[type=submit] {
+        font-size: 14px; }
+  #MainPanel ._c-reset-pwd ._w-reset-pwd ._reset-pwd .card {
+    border: none; }
+    #MainPanel ._c-reset-pwd ._w-reset-pwd ._reset-pwd .card .card-body {
+      font-size: 14px; }
+      #MainPanel ._c-reset-pwd ._w-reset-pwd ._reset-pwd .card .card-body form .form-group input {
+        font-size: 14px; }
+
+#AppendPosition .modal .modal-dialog .modal-content .modal-header {
+  border: none; }
+  #AppendPosition .modal .modal-dialog .modal-content .modal-header .modal-title {
+    font-size: 18px !important; }
+  #AppendPosition .modal .modal-dialog .modal-content .modal-header button[type=button]:focus, #AppendPosition .modal .modal-dialog .modal-content .modal-header button[type=button]:active {
+    outline: none;
+    border: none; }
+#AppendPosition .modal .modal-dialog .modal-content .modal-footer {
+  border: none; }
+  #AppendPosition .modal .modal-dialog .modal-content .modal-footer button[type=button] {
+    border-radius: 2px; }
+#AppendPosition .toast {
+  background-color: #bfe7ff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 9999;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 300px; }
+  #AppendPosition .toast .toast-header {
+    background-color: #bfe7ff; }
+    #AppendPosition .toast .toast-header img {
+      width: 15px;
+      height: 15px; }
+    #AppendPosition .toast .toast-header .app-name {
+      font-size: 13px; }
+    #AppendPosition .toast .toast-header .time-tip {
+      font-size: 11px; }
+  #AppendPosition .toast .toast-body {
+    font-size: 14px;
+    margin-left: 1px; }
+
+@media only screen and (max-width: 1214px) {
+  #MainPanel #SignIn .container, #MainPanel #SignUp .container {
+    width: 65%; } }
+@media only screen and (max-width: 1100px) {
+  #MainPanel #SignIn .container, #MainPanel #SignUp .container {
+    width: 70%; } }
+@media only screen and (max-width: 1010px) {
+  #MainPanel #SignIn .container, #MainPanel #SignUp .container {
+    width: 75%; }
+  #MainPanel #HomeLayout #NavLeft {
+    width: 55%;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%); }
+    #MainPanel #HomeLayout #NavLeft #SlideLeft {
+      display: block; }
+  #MainPanel #HomeLayout #MsgFrame {
+    margin: 0 auto;
+    width: 90%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    position: absolute !important;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); } }
+@media only screen and (max-width: 900px) {
+  #MainPanel #SignIn .container, #MainPanel #SignUp .container {
+    width: 80%; } }
+@media only screen and (max-width: 800px) {
+  #MainPanel #SignIn .container, #MainPanel #SignUp .container {
+    width: 90%; } }
+@media only screen and (max-width: 768px) {
+  .navbar .container-fluid #navbarSupportedContent .navbar-nav .nav-item {
+    margin-top: 1rem; }
+  .navbar .container-fluid #navbarSupportedContent .navbar-nav .dropdown {
+    position: relative; }
+    .navbar .container-fluid #navbarSupportedContent .navbar-nav .dropdown .dropdown-menu {
+      padding-top: 0;
+      position: absolute;
+      top: 30px;
+      left: 0; }
+      .navbar .container-fluid #navbarSupportedContent .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+        border-bottom: 1px solid #EDF2F4;
+        padding: 5px 3px 5px 4px;
+        font-size: 14px; }
+
+  #MainPanel #SignIn .container .signin-content, #MainPanel #SignIn .container .signup-content, #MainPanel #SignUp .container .signin-content, #MainPanel #SignUp .container .signup-content {
+    padding-top: 0;
+    padding-bottom: 30px; }
+    #MainPanel #SignIn .container .signin-content .signin-image, #MainPanel #SignIn .container .signin-content .signup-image, #MainPanel #SignIn .container .signup-content .signin-image, #MainPanel #SignIn .container .signup-content .signup-image, #MainPanel #SignUp .container .signin-content .signin-image, #MainPanel #SignUp .container .signin-content .signup-image, #MainPanel #SignUp .container .signup-content .signin-image, #MainPanel #SignUp .container .signup-content .signup-image {
+      min-height: 450px; }
+    #MainPanel #SignIn .container .signin-content .signin-form, #MainPanel #SignIn .container .signin-content .signup-form, #MainPanel #SignIn .container .signup-content .signin-form, #MainPanel #SignIn .container .signup-content .signup-form, #MainPanel #SignUp .container .signin-content .signin-form, #MainPanel #SignUp .container .signin-content .signup-form, #MainPanel #SignUp .container .signup-content .signin-form, #MainPanel #SignUp .container .signup-content .signup-form {
+      padding: 0; }
+      #MainPanel #SignIn .container .signin-content .signin-form .form-title, #MainPanel #SignIn .container .signin-content .signup-form .form-title, #MainPanel #SignIn .container .signup-content .signin-form .form-title, #MainPanel #SignIn .container .signup-content .signup-form .form-title, #MainPanel #SignUp .container .signin-content .signin-form .form-title, #MainPanel #SignUp .container .signin-content .signup-form .form-title, #MainPanel #SignUp .container .signup-content .signin-form .form-title, #MainPanel #SignUp .container .signup-content .signup-form .form-title {
+        margin-left: 0; }
+      #MainPanel #SignIn .container .signin-content .signin-form form, #MainPanel #SignIn .container .signin-content .signup-form form, #MainPanel #SignIn .container .signup-content .signin-form form, #MainPanel #SignIn .container .signup-content .signup-form form, #MainPanel #SignUp .container .signin-content .signin-form form, #MainPanel #SignUp .container .signin-content .signup-form form, #MainPanel #SignUp .container .signup-content .signin-form form, #MainPanel #SignUp .container .signup-content .signup-form form {
+        margin: 0; }
+    #MainPanel #SignIn .container .signin-content .signin-image, #MainPanel #SignIn .container .signup-content .signin-image, #MainPanel #SignUp .container .signin-content .signin-image, #MainPanel #SignUp .container .signup-content .signin-image {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    #MainPanel #SignIn .container .signin-content .signin-form, #MainPanel #SignIn .container .signup-content .signin-form, #MainPanel #SignUp .container .signin-content .signin-form, #MainPanel #SignUp .container .signup-content .signin-form {
+      -webkit-box-ordinal-group: 1;
+          -ms-flex-order: 0;
+              order: 0;
+      margin-bottom: 1rem; }
+    #MainPanel #SignIn .container .signin-content .signup-form, #MainPanel #SignIn .container .signup-content .signup-form, #MainPanel #SignUp .container .signin-content .signup-form, #MainPanel #SignUp .container .signup-content .signup-form {
+      margin-bottom: 1rem; }
+  #MainPanel #HomeLayout #NavLeft {
+    width: 70%; }
+  #MainPanel #HomeLayout #MsgFrame {
+    width: 95%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95%;
+            flex: 0 0 95%; } }
+@media only screen and (max-width: 555px) {
+  #MainPanel #SignIn .container, #MainPanel #SignUp .container {
+    width: 95%; }
+    #MainPanel #SignIn .container .signin-content .signin-form .form-title, #MainPanel #SignIn .container .signin-content .signup-form .form-title, #MainPanel #SignIn .container .signup-content .signin-form .form-title, #MainPanel #SignIn .container .signup-content .signup-form .form-title, #MainPanel #SignUp .container .signin-content .signin-form .form-title, #MainPanel #SignUp .container .signin-content .signup-form .form-title, #MainPanel #SignUp .container .signup-content .signin-form .form-title, #MainPanel #SignUp .container .signup-content .signup-form .form-title {
+      font-size: 30px; }
+  #MainPanel #HomeLayout #MsgFrame {
+    width: 98%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 98%;
+            flex: 0 0 98%; }
+  #MainPanel #HomeLayout #NavLeft {
+    width: 85%; } }
+@media only screen and (max-width: 405px) {
+  #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title h4 {
+      width: 100% !important;
+      height: auto; }
+    #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 1rem auto 1rem 0; }
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs .btn-add-mem,
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #video,
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #TeamFuncs {
+        display: inline-block; }
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs #video {
+        margin: 0 1rem; }
+      #MainPanel #HomeLayout #MsgFrame .message-frame .frame-header .team-title .msg-funcs i {
+        font-size: 1.6rem !important; } }

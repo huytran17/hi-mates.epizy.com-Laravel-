@@ -1,0 +1,1 @@
+<i class="fal fa-sync" id="RenewJoinCode" data-route="{{ route('client.team.renewJC', ['teamID' => $teamID]) }}"></i>
